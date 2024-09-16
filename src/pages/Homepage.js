@@ -17,7 +17,7 @@ export default function Homepage() {
         <div className="w-full h-screen relative">
           {/* Image as background */}
           <img
-            src={"/mountain.png"}
+            src={"${process.env.PUBLIC_URL}/mountain.png"}
             alt={"Mountain"}
             className="w-full h-full object-cover"
           />

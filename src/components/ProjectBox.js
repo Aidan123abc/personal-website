@@ -6,7 +6,7 @@ export default function ProjectBox({ imageName, title, description, link }) {
         <div className="relative group w-full h-0 pb-[100%] overflow-hidden border">
           {/* Image */}
           <img
-            src={`/${imageName}`}
+            src={`${process.env.PUBLIC_URL}/${imageName}`}
             alt={title}
             className="absolute top-0 left-0 w-full h-full object-contain rounded-lg transition-all duration-300"
           />

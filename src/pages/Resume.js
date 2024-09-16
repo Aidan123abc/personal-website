@@ -54,7 +54,7 @@ export default function Resume() {
           <div className="flex justify-center items-center">
             <div className="w-full lg:w-[60%] py-4 h-[800px] sm:h-[1000px]">
               <iframe
-                src="/AidanBanerjeeResume.pdf"
+                src={`${process.env.PUBLIC_URL}/AidanBanerjeeResume.pdf`}
                 width="100%"
                 height="100%"
                 title="Resume PDF"

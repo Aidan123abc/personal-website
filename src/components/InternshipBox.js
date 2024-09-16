@@ -5,7 +5,7 @@ export default function InternshipBox({ imageName, title, description, employer,
         {/* Image Section */}
         <div className="w-full lg:w-1/3">
           <img
-            src={`/${imageName}`} // Dynamically use the image name
+            src={`${process.env.PUBLIC_URL}/${imageName}`} // Dynamically use the image name
             alt={title}
             className="w-full h-auto max-h-60 lg:max-h-[240px] object-contain rounded-lg"
           />

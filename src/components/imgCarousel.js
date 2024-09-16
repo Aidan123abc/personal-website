@@ -23,6 +23,9 @@ export default function ImgCarousel({ deviceType }) {
     }
   };
 
+  // Function to prepend process.env.PUBLIC_URL to image paths
+  const getImageSrc = (src) => `${process.env.PUBLIC_URL}${src}`;
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1240 },
@@ -66,10 +69,10 @@ export default function ImgCarousel({ deviceType }) {
             <div
               key={index}
               className="w-80 h-100 p-4 cursor-pointer transition-transform transform hover:scale-105"
-              onClick={() => openModal(src)} // Open modal on click
+              onClick={() => openModal(getImageSrc(src))} // Open modal on click
             >
               <img
-                src={src}
+                src={getImageSrc(src)} // Prepend process.env.PUBLIC_URL to each image source
                 alt={`Aidan ${index + 1}`}
                 className="w-full h-full object-cover"
               />

@@ -29,7 +29,7 @@ export default function Homepage() {
             <div className="text-white text-center text-3xl md:text-4xl font-bold drop-shadow-xl py-4">
               Computer Science | Environmental Science | Mathematics
             </div>
-            {/* <div className="mt-10 flex items-center justify-center gap-x-6 lg:gap-x-12 text-white">
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:gap-x-12 text-white">
               <a
                 href="https://github.com/aidan123abc"
                 target="_blank"
@@ -63,7 +63,7 @@ export default function Homepage() {
               >
                 <MdOutlineEmail size={40} />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>

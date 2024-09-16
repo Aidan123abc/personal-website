@@ -1,8 +1,8 @@
 {
+  "homepage": "https://aidan123abc.github.io/aidan-banerjee",
   "name": "aidan-banerjee",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aidan123abc.github.io/PersonalWebsite",
   "dependencies": {
     "@headlessui/react": "^2.1.5",
     "@heroicons/react": "^2.1.5",

@@ -1,4 +1,4 @@
-import { Dialog, DialogPanel } from "@headlessui/react";
+import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 
@@ -27,13 +27,13 @@ export default function Layout({ children }) {
       `}</style>
 
       <div className="bg-white">
-        <header className="xs:hidden lg:block fixed inset-x-0 top-0 z-50 bg-black lg:bg-opacity-30 bg-opacity-0 transition-all duration-300 ease-in-out hover:bg-opacity-50">
+        <header className="fixed inset-x-0 top-0 z-50 bg-black lg:bg-opacity-30 bg-opacity-0 transition-all duration-300 ease-in-out hover:bg-opacity-50">
           <nav
             aria-label="Global"
             className="flex items-center justify-between p-6 lg:p-8 lg:px-0"
           >
-            {/* Mobile menu button */}
-            <div className="flex lg:hidden shadow-xl bg-black bg-opacity-30 hover:bg-opacity-50 transition-all duration-300 rounded-xl">
+            {/* Mobile menu button - always visible on small screens */}
+            <div className="flex shadow-xl bg-black bg-opacity-30 hover:bg-opacity-50 transition-all duration-300 rounded-xl lg:hidden">
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(true)}
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
               </button>
             </div>
 
-            {/* Desktop nav */}
+            {/* Desktop nav - hidden on small screens */}
             <div className="hidden lg:flex lg:flex-1 lg:justify-center">
               <div className="lg:flex lg:gap-x-12">
                 {navigation.map((item) => (
@@ -67,7 +67,7 @@ export default function Layout({ children }) {
             className="lg:hidden"
           >
             <div className="fixed inset-0 z-50" />
-            <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 <button
                   type="button"
@@ -94,7 +94,7 @@ export default function Layout({ children }) {
                   </div>
                 </div>
               </div>
-            </DialogPanel>
+            </Dialog.Panel>
           </Dialog>
         </header>
 

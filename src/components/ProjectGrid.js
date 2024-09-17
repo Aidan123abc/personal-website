@@ -13,7 +13,7 @@ export default function ProjectGrid() {
         imageName="WindPaper.png"
         title="A Safety-Aware Framework for Offshore Wind Turbine Maintenance"
         description="Research Paper"
-        link={"/Multi_Factor_Decision_Framework_Final_Draft.pdf"}
+        link={`${process.env.PUBLIC_URL}/Multi_Factor_Decision_Framework_Final_Draft.pdf`}
       />
       <ProjectBox
         imageName="25degrees.png"

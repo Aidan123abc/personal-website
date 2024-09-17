@@ -26,55 +26,62 @@ export default function Personal() {
       </div>
 
       {/* Skills and Education Grid */}
-      <div className="flex flex-col justify-center items-center py-12">
+      <div className="flex lg:flex-row flex-col py-12">
         {/* Education Section */}
-        <div className="text-center mb-12 lg:mb-0 lg:mr-12">
-          <div className="font-bold text-black text-3xl lg:text-4xl mb-4">
+        <div className="mb-12 lg:mb-0 lg:mr-[20%]">
+          <div className="font-bold text-black text-xl lg:text-2xl mb-6">
             Education
           </div>
-          <div className="text-lg lg:text-2xl leading-8 text-gray-600">
+          <div className="text-gray-600 text-base lg:text-lg leading-8">
             <p className="mb-4">
+              <strong>Bachelor's Degree</strong> - Tufts University (3.7 GPA)
+              <br />
+              <span className="italic">September 2021 - May 2025</span>
+            </p>
+            <p>
               <strong>High School Degree</strong> - Georgetown Day School (3.87
               GPA)
               <br />
               <span className="italic">September 2017 - May 2021</span>
-            </p>
-            <p>
-              <strong>Bachelor's Degree</strong> - Tufts University (3.7 GPA)
-              <br />
-              <span className="italic">September 2021 - May 2025</span>
             </p>
           </div>
         </div>
 
         {/* Skills Section */}
         <div>
-          <div className="font-bold text-black text-3xl lg:text-4xl mb-4 pt-12 text-center">
-            Skills
+          <div className="font-bold text-black text-xl lg:text-2xl mb-6">
+            Technical Skills
           </div>
-          <div className="text-lg lg:text-xl leading-8 text-gray-600">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 list-disc pl-5">
-              <li>C++</li>
-              <li>Python</li>
-              <li>ArcGIS</li>
-              <li>Jupyter Notebook</li>
-              <li>HTML</li>
-              <li>Javascript</li>
-              <li>React</li>
-              <li>Next.js</li>
-              <li>CSS</li>
-              <li>Node.js</li>
-              <li>FastAPI</li>
-              <li>MongoDB</li>
-              <li>SQL</li>
-              <li>Prisma</li>
-              <li>Amazon Web Services</li>
-              <li>MATLAB</li>
-              <li>Microsoft 365</li>
-              <li>LaTex</li>
-              <li>Github</li>
-              <li>Agile Practices and Scrum Cycle</li>
-            </ul>
+
+          {/* Languages */}
+          <div className="mb-6">
+            <div className="font-semibold text-black text-lg lg:text-xl mb-2">
+              Languages
+            </div>
+            <div className="text-gray-600 text-base lg:text-lg">
+              C/C++ (70%), Python(80%), HTML(65%), CSS(), JavaScript, LaTeX, SQL, R
+            </div>
+          </div>
+
+          {/* Frameworks */}
+          <div className="mb-6">
+            <div className="font-semibold text-black text-lg lg:text-xl mb-2">
+              Frameworks
+            </div>
+            <div className="text-gray-600 text-base lg:text-lg">
+              React, Next.js, Node.js, FastAPI, Prisma
+            </div>
+          </div>
+
+          {/* Tools/Software */}
+          <div>
+            <div className="font-semibold text-black text-lg lg:text-xl mb-2">
+              Tools/Software
+            </div>
+            <div className="text-gray-600 text-base lg:text-lg">
+              Amazon Web Services (AWS), ArcGIS, Jupyter Notebook, MATLAB,
+              Microsoft 365, GitHub, MongoDB, TailwindCSS
+            </div>
           </div>
         </div>
       </div>

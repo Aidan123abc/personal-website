@@ -27,7 +27,7 @@ export default function Resume() {
           Take a resume for the road
         </div>
 
-        <div className="flex justify-center py-4">
+        {/* <div className="flex justify-center py-4">
           <a
             // href="/resume.pdf"
             download="AidanBanerjeeResume.pdf"
@@ -35,7 +35,7 @@ export default function Resume() {
           >
             Download Resume
           </a>
-        </div>
+        </div> */}
 
         {isMobile ? (
           // Fallback for mobile users

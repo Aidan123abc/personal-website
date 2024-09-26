@@ -1,9 +1,9 @@
 export default function ProjectBox({ imageName, title, description, link }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="w-[90%] h-auto mx-auto mt-10 cursor-pointer">
+      <div className="w-[90%] lg:w-60% h-auto mx-auto mt-10 cursor-pointer bg-white rounded-xl">
         {/* Image Box with Overlay and Hover Effect */}
-        <div className="relative group w-full h-0 pb-[100%] overflow-hidden border">
+        <div className="relative group w-full h-0 pb-[100%] overflow-hidden border rounded-xl">
           {/* Image */}
           <img
             src={`${process.env.PUBLIC_URL}/${imageName}`}

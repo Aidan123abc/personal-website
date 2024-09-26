@@ -9,20 +9,21 @@ export default function Personal() {
 
       {/* Welcome Section */}
       <div className="text-center">
-        <div className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl p-8 rounded-xl">
-          Hi There Welcome to my Website!
+        {/* <div className="text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl p-8 rounded-xl">
+          Background
+        </div> */}
+        
+        <div className="mt-6 text-lg lg:text-2xl leading-8 text-gray-600 pt-6">
+        I am an undergraduate student at Tufts University pursuing a degree in 
+        Computer Science with minors in Environmental Policy and Mathematics. 
+        My passion lies at the intersection of software engineering, data science, 
+        environmental technology, and public policy. Through my coursework and 
+        extracurricular involvement, I have developed a strong foundation in 
+        programming, data analysis, and GIS modeling. I am eager to leverage my
+         skills to contribute to innovative solutions that address pressing 
+         environmental challenges and drive meaningful change.
         </div>
         <ImgCarousel deviceType="desktop" />
-        <div className="mt-6 text-lg lg:text-2xl leading-8 text-gray-600">
-          As an undergraduate student at Tufts University studying computer
-          science with a minor in environmental policy and mathematics, I am
-          passionate about software engineering, environmental technology, and
-          public policy. I have developed a range of skills in high and
-          low-level programming languages through my classes and
-          extracurriculars, and I am looking for an opportunity to continue to
-          grow in these areas and apply my work meaningfully to solving problems
-          I care about.
-        </div>
       </div>
 
       {/* Skills and Education Grid */}
@@ -59,7 +60,7 @@ export default function Personal() {
               Languages
             </div>
             <div className="text-gray-600 text-base lg:text-lg">
-              C/C++ (70%), Python(80%), HTML(65%), CSS(), JavaScript, LaTeX, SQL, R
+              C/C++ (90%), Python(80%), JavaScript(80%), HTML(65%), CSS(65%), LaTeX(90%), SQL(40%), R(40%)
             </div>
           </div>
 
@@ -80,7 +81,7 @@ export default function Personal() {
             </div>
             <div className="text-gray-600 text-base lg:text-lg">
               Amazon Web Services (AWS), ArcGIS, Jupyter Notebook, MATLAB,
-              Microsoft 365, GitHub, MongoDB, TailwindCSS
+              Microsoft 365, GitHub, MongoDB, PostgreSQL, TailwindCSS
             </div>
           </div>
         </div>

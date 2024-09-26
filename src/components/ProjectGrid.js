@@ -4,6 +4,12 @@ export default function ProjectGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <ProjectBox
+        imageName="HydroPowerGIS.png"
+        title="Potential of HPES - SIT"
+        description="GIS Analysis - Policy Research Paper"
+        link={`${process.env.PUBLIC_URL}/The Potential of Pumped Hydroelectric Energy Storage (2).pdf`}
+      />
+      <ProjectBox
         imageName="SpeakOUT.jpg"
         title="Jumbocode - SpeakOUT Boston"
         description="Webapp Project"

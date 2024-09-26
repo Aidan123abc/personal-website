@@ -8,21 +8,21 @@ import { FaInstagram } from "react-icons/fa";
 import BackgroundScroll from "../components/InternshipScroll";
 import Resume from "./Resume";
 import Personal from "./PersonalStatement";
-import ProjectGrid from "../components/ProjectGrid";
+import Projects from "./Projects";
 
 export default function Homepage() {
   return (
     <Layout>
       <section id="home" className="min-h-screen">
-        <div className="w-full h-screen relative">
+        <div className="w-full h-screen relative bg-black opacity-30%]">
           {/* Image as background */}
           <img
-            src={`${process.env.PUBLIC_URL}/mountain.png`}
+            src={`${process.env.PUBLIC_URL}/WebPhotoClimb.jpg`}
             alt={"Mountain"}
             className="w-full h-full object-cover"
           />
           {/* Overlay text */}
-          <div className="absolute inset-0 flex items-center justify-center flex-col">
+          <div className="absolute inset-0 z-10 flex items-center justify-center flex-col">
             <div className="text-white text-4xl md:text-8xl font-bold drop-shadow-xl">
               Aidan Banerjee
             </div>
@@ -71,29 +71,19 @@ export default function Homepage() {
       <section id="personal" className="min-h-screen">
         <Personal />
       </section>
-      <div className="py-8">
+      
+      <section id="background" className="min-h-screen pb-8">
+      <div className="pb-16">
         <hr></hr>
       </div>
-      <section id="background" className="min-h-screen pb-8">
-        <div className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl pl-[5%] rounded-xl pt-8">
-          Background / CV
+        <div className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-5xl pl-[5%] rounded-xl py-6 pt-10">
+          Experience
         </div>
         <BackgroundScroll />
       </section>
-      <div className="py-8">
-        <hr></hr>
-      </div>
-      <section id="projects" className="min-h-screen w-[90%]">
-        <div className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl pl-[5%] rounded-xl pt-8">
-          Projects & Papers
-        </div>
-        <div className="pl-[5%]">
-          <ProjectGrid />
-        </div>
+      <section id="projects" className="min-h-screen bg-indigo-900">
+        <Projects />
       </section>
-      <div className="py-8">
-        <hr></hr>
-      </div>
       <section id="resume" className="min-h-screen">
         <Resume />
       </section>

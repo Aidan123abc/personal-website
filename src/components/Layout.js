@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const navigation = [
   { name: "Home", href: "#home" },
-  { name: "Personal Statement", href: "#personal" },
-  { name: "Background", href: "#background" },
+  { name: "Background", href: "#personal" },
+  { name: "Experience", href: "#background" },
   { name: "Projects", href: "#projects" },
   { name: "Resume", href: "#resume" },
 ];
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-xl hover:text-2xl text-white font-semibold transition-all duration-300 ease-in-out"
+                    className="text-xl text-white font-semibold transition-colors duration-300 ease-in-out hover:text-indigo-400" // Removed text resizing
                   >
                     {item.name}
                   </a>

@@ -23,10 +23,20 @@ export default function Homepage() {
           />
           {/* Overlay text */}
           <div className="absolute inset-0 z-10 flex items-center justify-center flex-col">
-            <div className="text-white text-4xl md:text-8xl font-bold drop-shadow-xl">
+            <div
+              className="text-white text-4xl md:text-8xl font-bold"
+              style={{
+                textShadow: "4px 4px 8px rgba(0, 0, 0, 0.8)", // Enhanced shadow for the main title
+              }}
+            >
               Aidan Banerjee
             </div>
-            <div className="text-white text-center text-3xl md:text-4xl font-bold drop-shadow-xl py-4">
+            <div
+              className="text-white text-center text-3xl md:text-4xl font-bold py-4"
+              style={{
+                textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)", // Similar shadow effect for subtext
+              }}
+            >
               Computer Science | Environmental Science | Mathematics
             </div>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:gap-x-12 text-white">
@@ -35,15 +45,21 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-in-out hover:text-blue-400"
+                style={{
+                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
+                }}
               >
                 <FaGithub size={40} />
               </a>
-
+              
               <a
                 href="https://instagram.com/aidan.banerjee"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-in-out hover:text-blue-400"
+                style={{
+                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
+                }}
               >
                 <FaInstagram size={40} />
               </a>
@@ -53,6 +69,9 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-all duration-300 ease-in-out hover:text-blue-400"
+                style={{
+                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
+                }}
               >
                 <FaLinkedin size={40} />
               </a>
@@ -60,6 +79,9 @@ export default function Homepage() {
               <a
                 href="mailto:aidan.banerjee@tufts.edu"
                 className="transition-all duration-300 ease-in-out hover:text-blue-400"
+                style={{
+                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
+                }}
               >
                 <MdOutlineEmail size={40} />
               </a>
@@ -71,11 +93,11 @@ export default function Homepage() {
       <section id="personal" className="min-h-screen">
         <Personal />
       </section>
-      
-      <section id="background" className="min-h-screen pb-8">
-      <div className="pb-16">
-        <hr></hr>
-      </div>
+
+      <section id="background" className="min-h-screen pb-8 bg-gray-200">
+        <div className="pb-16">
+          <hr></hr>
+        </div>
         <div className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-5xl pl-[5%] rounded-xl py-6 pt-10">
           Experience
         </div>

@@ -79,13 +79,13 @@ export default function BackgroundScroll() {
       type: 'work',
     },
     {
-      imageName: 'Raskin.jpg',
-      title: 'Summer Staff Intern',
+      imageName: 'TuftsTutoringLCS.png',
+      title: 'Tufts LCS Tutoring',
       description:
-        'During my Summer Staff Internship in Congressman Jamie Raskin\'s Washington, D.C. office, I was responsible for engaging directly with constituents, answering calls, and addressing their concerns. I attended various meetings, both with constituents and legislative aides, to gain insights into the legislative process. Additionally, I wrote memos that summarized key discussions and policy issues for the Congressman and his staffers. This experience gave me firsthand exposure to the inner workings of a congressional office and the importance of constituent relations in shaping policy decisions.',
-      employer: 'Congressman Jamie Raskin\'s DC Office',
-      dateRange: 'August 2020',
-      type: 'work',
+        'In my first year at Tufts, I taught private lessons in English and Math twice a week to elementary and middle school students in the Boston area.',
+      employer: 'Tufts University',
+      dateRange: 'September 2021 - May 2022',
+      type: 'extracurricular',
     },
     {
       imageName: 'HopShop.jpg',
@@ -95,6 +95,15 @@ export default function BackgroundScroll() {
       employer: 'The "Hop Shop"',
       dateRange: 'August 2017 - June 2021',
       type: 'extracurricular',
+    },
+    {
+      imageName: 'Raskin.jpg',
+      title: 'Summer Staff Intern',
+      description:
+        'During my Summer Staff Internship in Congressman Jamie Raskin\'s Washington, D.C. office, I was responsible for engaging directly with constituents, answering calls, and addressing their concerns. I attended various meetings, both with constituents and legislative aides, to gain insights into the legislative process. Additionally, I wrote memos that summarized key discussions and policy issues for the Congressman and his staffers. This experience gave me firsthand exposure to the inner workings of a congressional office and the importance of constituent relations in shaping policy decisions.',
+      employer: 'Congressman Jamie Raskin\'s DC Office',
+      dateRange: 'August 2020',
+      type: 'work',
     },
     {
       imageName: 'GDS.jpg',
@@ -114,7 +123,7 @@ export default function BackgroundScroll() {
   return (
     <div>
       {/* Dropdown for small screens */}
-      <div className="block lg:hidden mb-4 flex justify-center">
+      <div className="block lg:hidden mb-4 flex justify-center w-[80%] ml-[10%]">
         <select
           className="w-full p-2 border rounded-md bg-indigo-900 text-white text-center mt-4 py-4 w-[80%]"
           onChange={(e) => setActiveTab(e.target.value)}

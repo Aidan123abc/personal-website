@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, memo } from 'react';
 
-export default function InternshipBox({ imageName, title, description, employer, dateRange, type }) {
+const InternshipBox = memo(({ imageName, title, description, employer, dateRange, type }) => {
   const [isExpanded, setIsExpanded] = useState(false); // State to manage the box's expansion
   const [isTruncated, setIsTruncated] = useState(false); // State to check if the text is truncated
   const descriptionRef = useRef(null); // Reference to the description element
@@ -40,6 +40,7 @@ export default function InternshipBox({ imageName, title, description, employer,
           <img
             src={`${process.env.PUBLIC_URL}/${imageName}`} // Dynamically use the image name
             alt={title}
+            loading="lazy" // Lazy loading the image for performance
             className="w-full h-auto max-h-40 lg:max-h-[160px] object-contain rounded-lg"
           />
         </div>
@@ -80,4 +81,6 @@ export default function InternshipBox({ imageName, title, description, employer,
       </div>
     </div>
   );
-}
+});
+
+export default InternshipBox;

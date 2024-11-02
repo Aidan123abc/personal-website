@@ -30,22 +30,49 @@ export default function Personal() {
       {/* Skills and Education Grid */}
       <div className="flex lg:flex-row flex-col py-12">
         {/* Education Section */}
-        <div className="mb-12 lg:mb-0 lg:mr-[20%]">
-          <div className="font-bold text-black text-xl lg:text-2xl mb-6">
+        <div className="mb-12 lg:mb-0 lg:mr-[5%] w-[175%]">
+          <h2 className="font-bold text-black text-xl lg:text-2xl mb-6">
             Education
-          </div>
-          <div className="text-gray-600 text-base lg:text-lg leading-8">
-            <p className="mb-4">
-              <strong>Bachelor's Degree</strong> - Tufts University (3.7 GPA)
-              <br />
-              <span className="italic">September 2021 - May 2025</span>
-            </p>
-            <p>
-              <strong>High School Degree</strong> - Georgetown Day School (3.87
-              GPA)
-              <br />
-              <span className="italic">September 2017 - May 2021</span>
-            </p>
+          </h2>
+          <div className="text-gray-600 text-base lg:text-lg leading-8 space-y-6">
+            <div className="lg:space-y-3 space-y-0">
+              {/* Tufts University */}
+              <div className="lg:flex lg:space-x-4 lg:items-start">
+                <p className="font-semibold text-xl">Tufts University</p>
+                <p className="italic lg:mt-0 mt-1">Class of 2025</p>
+              </div>
+              <p>
+                Bachelor of Science in <b>Computer Science</b>
+              </p>
+              <p className="pl-8">GPA: 3.7 | Dean's List</p>
+              <div className="pl-8 flex space-x-1">
+                <p className="lg:w-[100px]">Minor in</p>
+                <p className="font-semibold italic">
+                  Environmental Science and Policy
+                </p>
+              </div>
+              <div className="pl-8 flex items-center space-x-1">
+                <p>Minor in</p>
+                <p className="font-semibold italic">Mathematics</p>
+              </div>
+
+              {/* School of International Training */}
+              <div className="lg:flex lg:space-x-4 lg:items-start">
+                <p className="font-semibold text-xl">
+                  School of International Training
+                </p>
+                <p className="italic lg:mt-0 mt-1">Class of 2024</p>
+              </div>
+              <p>Iceland - Renewable Energy, Technology & Resource Economics</p>
+              <p className="pl-8">GPA: 4.0</p>
+
+              {/* Georgetown Day School */}
+              <div className="lg:flex lg:space-x-4 lg:items-start">
+                <p className="font-semibold text-xl">Georgetown Day School</p>
+                <p className="italic lg:mt-0 mt-1">Class of 2021</p>
+              </div>
+              <p className="pl-8">GPA: 3.87</p>
+            </div>
           </div>
         </div>
 
@@ -61,6 +88,23 @@ export default function Personal() {
               Languages
             </div>
             <div className="text-gray-600 text-base lg:text-lg">
+              Proficient in C/C++, Python, Java, and JavaScript, with additional
+              experience in web development languages (HTML, CSS), database
+              management with SQL, data analysis with R, and technical
+              documentation using LaTeX.
+            </div>
+          </div>
+
+          {/* Frameworks */}
+          <div className="mb-6">
+            <div className="font-semibold text-black text-lg lg:text-xl mb-2">
+              Frameworks
+            </div>
+            <div className="text-gray-600 text-base lg:text-lg">
+              Skilled in building dynamic applications with React, Next.js, and
+              Node.js for front-end and server-side development, with expertise
+              in machine learning and deep learning using PyTorch, and backend
+              API development with FastAPI and Prisma.
               C/C++ (90%), Python(80%), JavaScript(80%), HTML(65%), CSS(65%),
               LaTeX(90%), SQL(40%), R(40%)
             </div>

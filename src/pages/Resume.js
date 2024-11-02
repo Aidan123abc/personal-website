@@ -41,8 +41,7 @@ export default function Resume() {
           // Fallback for mobile users
           <div className="flex justify-center items-center w-full py-4">
             <a
-              // href="/AidanBanerjeeResume.pdf"
-              target="_blank"
+              href={`${process.env.PUBLIC_URL}/AidanBanerjeeResume.pdf`}
               rel="noopener noreferrer"
               className="text-indigo-600 underline text-lg"
             >

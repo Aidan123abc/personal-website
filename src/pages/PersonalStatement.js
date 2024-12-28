@@ -46,7 +46,7 @@ export default function Personal() {
               </p>
               <p className="pl-8">GPA: 3.7 | Dean's List</p>
               <div className="pl-8 flex space-x-1">
-                <p className="lg:w-[100px]">Minor in</p>
+                <p className="lg:w-[65px]">Minor in</p>
                 <p className="font-semibold italic">
                   Environmental Science and Policy
                 </p>
@@ -105,8 +105,6 @@ export default function Personal() {
               Node.js for front-end and server-side development, with expertise
               in machine learning and deep learning using PyTorch, and backend
               API development with FastAPI and Prisma.
-              C/C++ (90%), Python(80%), JavaScript(80%), HTML(65%), CSS(65%),
-              LaTeX(90%), SQL(40%), R(40%)
             </div>
           </div>
 
@@ -116,18 +114,11 @@ export default function Personal() {
               Tools/Software
             </div>
             <div className="text-gray-600 text-base lg:text-lg">
-              Amazon Web Services (AWS), ArcGIS, Jupyter Notebook, MATLAB,
-              Microsoft 365, GitHub, MongoDB, PostgreSQL, TailwindCSS
-            </div>
-          </div>
-
-          {/* Frameworks */}
-          <div>
-            <div className="font-semibold text-black text-lg lg:text-xl mb-2">
-              Frameworks
-            </div>
-            <div className="text-gray-600 text-base lg:text-lg">
-              Pytorch, React, Next.js, Node.js, FastAPI, Prisma
+              Experienced with cloud computing and deployment on Amazon Web
+              Services (AWS), GIS analysis with ArcGIS, and scientific computing
+              in MATLAB and Jupyter Notebook. Proficient in version control with
+              GitHub, database management in MongoDB and PostgreSQL, and
+              utilizing TailwindCSS for streamlined and responsive UI design.
             </div>
           </div>
         </div>

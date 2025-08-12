@@ -41,7 +41,7 @@ export default function Resume() {
           // Fallback for mobile users
           <div className="flex justify-center items-center w-full py-4">
             <a
-              href={`${process.env.PUBLIC_URL}/AidanBanerjeeResume.pdf`}
+              href={`${process.env.PUBLIC_URL}/AidanBanerjeeResume1.pdf`}
               rel="noopener noreferrer"
               className="text-indigo-600 underline text-lg"
             >
@@ -53,7 +53,7 @@ export default function Resume() {
           <div className="flex justify-center items-center">
             <div className="w-full lg:w-[60%] py-4 h-[800px] sm:h-[1000px]">
               <iframe
-                src={`${process.env.PUBLIC_URL}/AidanBanerjeeResume.pdf`}
+                src={`${process.env.PUBLIC_URL}/AidanBanerjeeResume1.pdf`}
                 width="100%"
                 height="100%"
                 title="Resume PDF"

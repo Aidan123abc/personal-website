@@ -31,15 +31,31 @@ export default function Homepage() {
             >
               Aidan Banerjee
             </div>
-            <div
-              className="text-white text-center text-3xl md:text-4xl font-bold py-4"
-              style={{
-                textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)", // Similar shadow effect for subtext
-              }}
-            >
-              Computer Science | Environmental Science | Mathematics
-            </div>
-            <div className="mt-10 flex items-center justify-center gap-x-6 lg:gap-x-12 text-white">
+            
+            <div className="py-8 flex items-center justify-center gap-x-6 lg:gap-x-12 text-white">
+
+              <a
+                href="https://www.linkedin.com/in/aidan-banerjee/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-300 ease-in-out hover:text-blue-400"
+                style={{
+                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
+                }}
+              >
+                <FaLinkedin size={40} />
+              </a>
+
+              <a
+                href="mailto:aidan.banerjee@tufts.edu"
+                className="transition-all duration-300 ease-in-out hover:text-blue-400"
+                style={{
+                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
+                }}
+              >
+                <MdOutlineEmail size={40} />
+              </a>
+
               <a
                 href="https://github.com/aidan123abc"
                 target="_blank"
@@ -63,28 +79,14 @@ export default function Homepage() {
               >
                 <FaInstagram size={40} />
               </a>
-
-              <a
-                href="https://www.linkedin.com/in/aidan-banerjee/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-all duration-300 ease-in-out hover:text-blue-400"
-                style={{
-                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
-                }}
-              >
-                <FaLinkedin size={40} />
-              </a>
-
-              <a
-                href="mailto:aidan.banerjee@tufts.edu"
-                className="transition-all duration-300 ease-in-out hover:text-blue-400"
-                style={{
-                  filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7))", // Drop shadow for icons
-                }}
-              >
-                <MdOutlineEmail size={40} />
-              </a>
+            </div>
+            <div
+              className="text-white text-center text-3xl md:text-4xl font-bold py-4"
+              style={{
+                textShadow: "3px 3px 6px rgba(0, 0, 0, 0.8)", // Similar shadow effect for subtext
+              }}
+            >
+              202-290-8029 | aidan.banerjee@gmail.com
             </div>
           </div>
         </div>

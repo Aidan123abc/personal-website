@@ -36,42 +36,104 @@ export default function Personal() {
           </h2>
           <div className="text-gray-600 text-base lg:text-lg leading-8 space-y-6">
             <div className="lg:space-y-3 space-y-0">
+              {/* Johns Hopkins */}
+              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 mb-4">
+                <div className="flex justify-center lg:justify-start lg:w-1/4">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/JHU_Logo.jpeg`}
+                    alt="Johns Hopkins logo"
+                    loading="lazy"
+                    className="h-auto max-h-32 object-contain rounded-lg"
+                  />
+                </div>
+                <div className="flex flex-col lg:w-3/4 text-sm">
+                  <div>
+                    <p className="font-semibold text-lg">Johns Hopkins</p>
+                    <p className="italic text-gray-600">Expected: 2026</p>
+                  </div>
+                  <p className="mt-1">
+                    Master of Science in <b>Energy Policy and Climate</b>
+                  </p>
+                  <p>GPA: TBD</p>
+                </div>
+              </div>
+
               {/* Tufts University */}
-              <div className="lg:flex lg:space-x-4 lg:items-start">
-                <p className="font-semibold text-xl">Tufts University</p>
-                <p className="italic lg:mt-0 mt-1">Class of 2025</p>
-              </div>
-              <p>
-                Bachelor of Science in <b>Computer Science</b>
-              </p>
-              <p className="pl-8">GPA: 3.7 | Dean's List</p>
-              <div className="pl-8 flex space-x-1">
-                <p className="lg:w-[65px]">Minor in</p>
-                <p className="font-semibold italic">
-                  Environmental Science and Policy
-                </p>
-              </div>
-              <div className="pl-8 flex items-center space-x-1">
-                <p>Minor in</p>
-                <p className="font-semibold italic">Mathematics</p>
+              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 mb-4">
+                <div className="flex justify-center lg:justify-start lg:w-1/4">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/Tufts_SOE_Logo.jpg`}
+                    alt="Tufts University logo"
+                    loading="lazy"
+                    className="h-auto max-h-32 object-contain rounded-lg"
+                  />
+                </div>
+                <div className="flex flex-col lg:w-3/4 text-sm">
+                  <div>
+                    <p className="font-semibold text-lg">Tufts University</p>
+                    <p className="italic text-gray-600">Class of 2025</p>
+                  </div>
+                  <p className="mt-1">
+                    Bachelor of Science in <b>Computer Science</b>
+                  </p>
+                  <p>GPA: 3.7 | Dean's List</p>
+                  <div className="flex space-x-1">
+                    <p>Minor in</p>
+                    <p className="font-semibold italic">
+                      Environmental Science and Policy
+                    </p>
+                  </div>
+                  <div className="flex space-x-1">
+                    <p>Minor in</p>
+                    <p className="font-semibold italic">Mathematics</p>
+                  </div>
+                </div>
               </div>
 
               {/* School of International Training */}
-              <div className="lg:flex lg:space-x-4 lg:items-start">
-                <p className="font-semibold text-xl">
-                  School of International Training
-                </p>
-                <p className="italic lg:mt-0 mt-1">Class of 2024</p>
+              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 mb-4">
+                <div className="flex justify-center lg:justify-start lg:w-1/4">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/SIT_Logo.jpg`}
+                    alt="School of International Training logo"
+                    loading="lazy"
+                    className="h-auto max-h-32 object-contain rounded-lg"
+                  />
+                </div>
+                <div className="flex flex-col lg:w-3/4 text-sm">
+                  <div>
+                    <p className="font-semibold text-lg">
+                      School of International Training
+                    </p>
+                    <p className="italic text-gray-600">Class of 2024</p>
+                  </div>
+                  <p className="mt-1">
+                    Iceland – Renewable Energy, Technology & Resource Economics
+                  </p>
+                  <p>GPA: 4.0</p>
+                </div>
               </div>
-              <p>Iceland - Renewable Energy, Technology & Resource Economics</p>
-              <p className="pl-8">GPA: 4.0</p>
 
               {/* Georgetown Day School */}
-              <div className="lg:flex lg:space-x-4 lg:items-start">
-                <p className="font-semibold text-xl">Georgetown Day School</p>
-                <p className="italic lg:mt-0 mt-1">Class of 2021</p>
+              <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-6 mb-4">
+                <div className="flex justify-center lg:justify-start lg:w-1/4">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/GDS_Logo.png`}
+                    alt="Georgetown Day School logo"
+                    loading="lazy"
+                    className="h-auto max-h-32 object-contain rounded-lg"
+                  />
+                </div>
+                <div className="flex flex-col lg:w-3/4 text-sm">
+                  <div>
+                    <p className="font-semibold text-lg">
+                      Georgetown Day School
+                    </p>
+                    <p className="italic text-gray-600">Class of 2021</p>
+                  </div>
+                  <p className="mt-1">GPA: 3.87</p>
+                </div>
               </div>
-              <p className="pl-8">GPA: 3.87</p>
             </div>
           </div>
         </div>

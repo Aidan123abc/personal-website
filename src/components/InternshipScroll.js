@@ -7,6 +7,15 @@ export default function BackgroundScroll() {
   // Array of experiences with their respective properties
   const experiences = [
     {
+      imageName: 'BCI_Logo.png',
+      title: 'Product Design and Data Specialist',
+      description:
+        'In my current role at Beacon Climate Innovations, I am part of the team that is developing CEERUM, our municipal energy-transition planning platform. I designed custom automation pipelines through full-stack development that have reduced customer onboarding time by more than 300% and eliminated manual data processing for municipal clients. I also developed dynamic dashboards and interactive mapping tools using Next.js, Power BI, and ArcGIS, which enable communities to visualize various decarbonization pathways. These deliverables have not only improved efficiency but also broadened access to data-driven climate planning.',
+      employer: 'Beacon Climate Innovations',
+      dateRange: 'June 2025 - Current',
+      type: 'work',
+    },
+    {
       imageName: 'climbingTeam.jfif',
       title: 'Captain',
       description:
